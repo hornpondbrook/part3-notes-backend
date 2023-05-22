@@ -39,7 +39,7 @@ let notes = [
 
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+  res.send('<h1>Hello World! HAHAHA</h1>')
 })
 
 app.get('/api/notes', (req, res) => {
@@ -57,8 +57,8 @@ app.post('/api/notes', (request, response) => {
   const body = request.body
 
   if (!body.content) {
-    return response.status(400).json({ 
-      error: 'content missing' 
+    return response.status(400).json({
+      error: 'content missing'
     })
   }
 
